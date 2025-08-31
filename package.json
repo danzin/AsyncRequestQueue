@@ -1,0 +1,29 @@
+{
+	"name": "asyncrequestqueue",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/danzin/AsyncRequestQueue.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/danzin/AsyncRequestQueue/issues"
+	},
+	"homepage": "https://github.com/danzin/AsyncRequestQueue#readme",
+	"devDependencies": {
+		"@types/jest": "^30.0.0",
+		"@types/node": "^24.3.0",
+		"jest": "^30.1.1",
+		"ts-jest": "^29.4.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.2"
+	}
+}

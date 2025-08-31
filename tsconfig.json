@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ES2020",
+		"types": ["node", "jest"],
+
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
+
+		"noUncheckedIndexedAccess": false,
+		"exactOptionalPropertyTypes": false,
+
+		"strict": true,
+		"jsx": "react-jsx",
+		"verbatimModuleSyntax": false,
+		"isolatedModules": true,
+		"moduleResolution": "node",
+
+		"noUncheckedSideEffectImports": true,
+		"moduleDetection": "force",
+		"esModuleInterop": true,
+		"skipLibCheck": true
+	}
+}
