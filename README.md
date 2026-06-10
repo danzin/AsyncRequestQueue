@@ -38,7 +38,17 @@ Native JS Arrays `[]` significantly reduce performance even on small amount of t
     Linked-list queue (10,000,000 tasks in batches): 7853.66 ms
 ```
 
+## Important
+
+Despite the fact that a clean queue implementation is faster than native JS arrays, custom node objects can cost more than expected because `Array`s are heavily optimized. 
+In many JS engines this beats a linked list because linked lists are can create pointer-chasing bottlenecks: lots of small objects, worse cache locality, more GC pressure.
+
+Cleaner apprach would be the `ArrayCursorQueue` and an `AsyncQueue` class with `queue = new ArrayCursorQueue<() => Promise<void>>();`
+
+
 ## Why? 
 
 In the classic queue implementation, `enqueue`/`dequeue` are both O(1), whereas even though `shift` and `unshift` aren't used in the native `[]` implementation, `splice` at the front is still O(n). 
 Introducing even 1 linear growth operation can massively hinder performance. 
+
+
