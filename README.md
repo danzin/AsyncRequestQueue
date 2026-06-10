@@ -1,17 +1,17 @@
 # AsyncRequestQueue
 
-A TypeScript/Node.js implementation of an **asynchronous request queue** with configurable concurrency — in two flavors:
+A TypeScript/Node.js implementation of an **asynchronous request queue** with configurable concurrency in two flavors:
 
-1. **Array-based queue** – simple, uses native JavaScript arrays.
-2. **Linked-list-based queue** – uses a custom `Queue<T>` implementation for O(1) enqueue/dequeue.
+1. **Array-based queue**: simple, uses native JavaScript arrays.
+2. **Linked-list-based queue**: uses a custom `Queue<T>` implementation for O(1) enqueue/dequeue.
 
 Includes performance comparison tests to see how each approach scales from small to very large workloads.
 
 ## Features
 
-- **Concurrency control** – limit how many async tasks run at once.
-- **Two queue backends** – native array vs. linked list.
-- **Performance benchmarks** – compare execution times for different queue sizes.
+- **Concurrency control**: limit how many async tasks run at once.
+- **Two queue backends**: native array vs. linked list.
+- **Performance benchmarks**: compare execution times for different queue sizes.
 
 ## Results 
 
