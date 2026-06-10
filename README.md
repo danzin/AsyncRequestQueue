@@ -41,7 +41,7 @@ Native JS Arrays `[]` significantly reduce performance even on small amount of t
 ## Important
 
 Despite the fact that a clean queue implementation is faster than native JS arrays, custom node objects can cost more than expected because `Array`s are heavily optimized. 
-In many JS engines this beats a linked list because linked lists are can create pointer-chasing bottlenecks: lots of small objects, worse cache locality, more GC pressure.
+In many JS engines this beats a linked list because linked lists can create pointer-chasing bottlenecks: lots of small objects, worse cache locality, more GC pressure.
 
 Cleaner apprach would be the `ArrayCursorQueue` and an `AsyncQueue` class with `queue = new ArrayCursorQueue<() => Promise<void>>();`
 
